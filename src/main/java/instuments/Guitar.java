@@ -14,12 +14,9 @@ public class Guitar extends Instrument implements IPlay {
         this.numberOfFrets = numberOfFrets;
         this.typeOfStrings = typeOfStrings;
         this.playNoise = playNoise;
+
     }
 
-    @Override
-    public String play(String sound) {
-        return play(sound);
-    }
 
     public int getNumberOfStrings() {
         return numberOfStrings;
@@ -33,5 +30,8 @@ public class Guitar extends Instrument implements IPlay {
         return typeOfStrings;
     }
 
-
+    @Override
+    public String play() {
+        return "de de de";
+    }
 }

@@ -30,4 +30,8 @@ public class GuitarTest {
         assertEquals("Steel", guitar.getTypeOfStrings());
     }
 
+    @Test
+    public void checkPlay(){
+        assertEquals("de de de", guitar.play());
+    }
 }

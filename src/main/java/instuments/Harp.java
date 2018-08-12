@@ -2,14 +2,10 @@ package instuments;
 
 import behaviours.IPlay;
 
-public class Harp extends Instrument implements IPlay {
+public class Harp extends Instrument {
     private int numberOfStrings;
 
 
-    @Override
-    public String play(String sound) {
-        return play(sound);
-    }
 
     public Harp(String colour, String type, int numberOfStrings, IPlay playNoise) {
         super(colour, type, playNoise);
@@ -20,5 +16,9 @@ public class Harp extends Instrument implements IPlay {
     public int getNumberOfStrings() {
         return numberOfStrings;
     }
+
+
+
+
 
 }

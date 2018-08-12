@@ -15,8 +15,4 @@ public abstract class Instrument  {
 
 
 
-    public IPlay getPlayNoise() {
-        return playNoise;
-    }
-
 }

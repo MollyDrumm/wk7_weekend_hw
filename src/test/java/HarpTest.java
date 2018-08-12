@@ -20,6 +20,4 @@ public class HarpTest {
         assertEquals(47, harp.getNumberOfStrings());
     }
 
-
-
 }
