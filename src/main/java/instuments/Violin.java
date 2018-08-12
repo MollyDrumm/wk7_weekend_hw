@@ -1,20 +1,18 @@
 package instuments;
 
-public class Violin {
+public class Violin extends Intrument {
 
     private int numberOfStrings;
-    private String typeOfViolin;
 
-    public Violin(int numberOfStrings, String typeOfViolin) {
+
+    public Violin(String colour, String type, int numberOfStrings) {
+        super(colour, type);
         this.numberOfStrings = numberOfStrings;
-        this.typeOfViolin = typeOfViolin;
+
     }
 
     public int getNumberOfStrings() {
         return numberOfStrings;
     }
 
-    public String getTypeOfViolin() {
-        return typeOfViolin;
-    }
 }

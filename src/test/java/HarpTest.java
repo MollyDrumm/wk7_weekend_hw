@@ -10,7 +10,7 @@ public class HarpTest {
 
     @Before
     public void before(){
-        harp = new Harp(47, "Pedal Harp");
+        harp = new Harp(47);
     }
 
     @Test
@@ -18,9 +18,6 @@ public class HarpTest {
         assertEquals(47, harp.getNumberOfStrings());
     }
 
-    @Test
-    public void CheckTypeOfHarp(){
-        assertEquals("Pedal Harp", harp.getTypeOfHarp());
-    }
+
 
 }

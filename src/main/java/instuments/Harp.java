@@ -1,19 +1,16 @@
 package instuments;
 
-public class Harp {
+public class Harp extends Intrument{
     private int numberOfStrings;
     private String typeOfHarp;
 
-    public Harp(int numberOfStrings, String typeOfHarp) {
+    public Harp(String colour, String type, int numberOfStrings) {
+        super(colour, type);
         this.numberOfStrings = numberOfStrings;
-        this.typeOfHarp = typeOfHarp;
     }
 
     public int getNumberOfStrings() {
         return numberOfStrings;
     }
 
-    public String getTypeOfHarp() {
-        return typeOfHarp;
-    }
 }
