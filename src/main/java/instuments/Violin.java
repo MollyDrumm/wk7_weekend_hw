@@ -1,12 +1,15 @@
 package instuments;
 
-public class Violin extends Intrument {
+import behaviours.IPlay;
+
+public class Violin extends Instrument  {
 
     private int numberOfStrings;
 
 
-    public Violin(String colour, String type, int numberOfStrings) {
-        super(colour, type);
+
+    public Violin(String colour, String type, int numberOfStrings, IPlay playNoise) {
+        super(colour, type, playNoise);
         this.numberOfStrings = numberOfStrings;
 
     }
@@ -14,5 +17,10 @@ public class Violin extends Intrument {
     public int getNumberOfStrings() {
         return numberOfStrings;
     }
+
+    public String playViolinNoise(){
+        return "La la la";
+    }
+
 
 }

@@ -1,16 +1,24 @@
 package instuments;
 
-public class Guitar extends Intrument {
+import behaviours.IPlay;
+
+public class Guitar extends Instrument implements IPlay {
 
     private int numberOfStrings;
     private int numberOfFrets;
     private String typeOfStrings;
 
-    public Guitar(String colour, String type, int numberOfStrings, int numberOfFrets, String typeOfStrings) {
-        super(colour, type);
+    public Guitar(String colour, String type, int numberOfStrings, int numberOfFrets, String typeOfStrings, IPlay playNoise) {
+        super(colour, type, playNoise);
         this.numberOfStrings = numberOfStrings;
         this.numberOfFrets = numberOfFrets;
         this.typeOfStrings = typeOfStrings;
+        this.playNoise = playNoise;
+    }
+
+    @Override
+    public String play(String sound) {
+        return play(sound);
     }
 
     public int getNumberOfStrings() {
@@ -24,4 +32,6 @@ public class Guitar extends Intrument {
     public String getTypeOfStrings() {
         return typeOfStrings;
     }
+
+
 }

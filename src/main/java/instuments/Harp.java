@@ -1,12 +1,20 @@
 package instuments;
 
-public class Harp extends Intrument{
-    private int numberOfStrings;
-    private String typeOfHarp;
+import behaviours.IPlay;
 
-    public Harp(String colour, String type, int numberOfStrings) {
-        super(colour, type);
+public class Harp extends Instrument implements IPlay {
+    private int numberOfStrings;
+
+
+    @Override
+    public String play(String sound) {
+        return play(sound);
+    }
+
+    public Harp(String colour, String type, int numberOfStrings, IPlay playNoise) {
+        super(colour, type, playNoise);
         this.numberOfStrings = numberOfStrings;
+        this.playNoise = playNoise;
     }
 
     public int getNumberOfStrings() {

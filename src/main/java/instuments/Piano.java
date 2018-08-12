@@ -1,11 +1,13 @@
 package instuments;
 
-public class Piano extends Intrument {
+import behaviours.IPlay;
+
+public class Piano extends Instrument {
     private int numberOfKeys;
     private int numberOfPedals;
 
-    public Piano(String colour, String type, int numberOfKeys, int numberOfPedals) {
-        super(colour, type);
+    public Piano(String colour, String type, int numberOfKeys, int numberOfPedals, IPlay playNoise) {
+        super(colour, type, playNoise);
         this.numberOfKeys = numberOfKeys;
         this.numberOfPedals = numberOfPedals;
     }
