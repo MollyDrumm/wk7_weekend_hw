@@ -1,4 +1,3 @@
-import behaviours.IPlay;
 import instuments.Guitar;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,11 +7,11 @@ import static org.junit.Assert.assertEquals;
 public class GuitarTest {
 
     Guitar guitar;
-    IPlay playNoise;
+
 
     @Before
     public void before(){
-        guitar = new Guitar("White", "Electric", 6, 19, "Steel", playNoise);
+        guitar = new Guitar("White", "Electric", 6, 19, "Steel");
     }
 
     @Test

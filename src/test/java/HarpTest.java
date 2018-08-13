@@ -12,7 +12,7 @@ public class HarpTest {
 
     @Before
     public void before(){
-        harp = new Harp("Black", "Concert Harp", 47, playNoise);
+        harp = new Harp("Black", "Concert Harp", 47);
     }
 
     @Test

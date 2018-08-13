@@ -2,17 +2,26 @@ package instuments;
 
 import behaviours.IPlay;
 
-public abstract class Instrument  {
+public abstract class Instrument implements IPlay {
     protected String colour;
     protected String type;
-    protected IPlay playNoise;
 
-    public Instrument(String colour, String type, IPlay playNoise) {
+    public Instrument(String colour, String type) {
         this.colour = colour;
         this.type = type;
-        this.playNoise = playNoise;
+    }
+
+    public String play(){
+        return "noise";
     }
 
 
-
 }
+
+
+/*
+
+ Diagram -> Test -> Code -> Repeat
+ 10-15mis
+
+ */

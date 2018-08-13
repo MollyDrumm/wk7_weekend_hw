@@ -1,5 +1,4 @@
-import behaviours.IPlay;
-import behaviours.ISell;
+
 import instuments.Piano;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,13 +8,12 @@ import static org.junit.Assert.assertEquals;
 public class PianoTest {
 
     Piano piano;
-    IPlay playNoise;
-    ISell sellItems;
+
 
 
     @Before
     public void before(){
-        piano = new Piano("Brown", "Baby Grand", 88, 2, playNoise, 100, 150);
+        piano = new Piano("Brown", "Baby Grand", 88, 2, 100, 150);
     }
 
     @Test
@@ -40,7 +38,7 @@ public class PianoTest {
 
     @Test
     public void checkCalculateMarkup(){
-        double actual = piano.calculateMarkup(100, 150);
+        double actual = piano.calculateMarkup();
         assertEquals(50, actual, 0.1);
     }
 

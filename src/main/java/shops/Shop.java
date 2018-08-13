@@ -11,7 +11,7 @@ public class Shop {
         this.stock = stock;
 
     }
-    
+
 
     public ArrayList<ISell> stock() {
         return stock;
